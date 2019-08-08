@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackgroundComponent } from './background/background.component';
 import { ParticlesModule } from 'angular-particle';
+import { ProfileImageComponent } from './profile-image/profile-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    ProfileImageComponent
   ],
   imports: [
     BrowserModule,
