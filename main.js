@@ -37,6 +37,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _skills_skills_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./skills/skills.component */ "./src/app/skills/skills.component.ts");
+
 
 
 
@@ -44,7 +46,11 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [{
         path: '',
         component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
-    }];
+    }, {
+        path: 'skills',
+        component: _skills_skills_component__WEBPACK_IMPORTED_MODULE_4__["SkillsComponent"]
+    }
+];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
@@ -139,6 +145,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var ngx_typed_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-typed-js */ "./node_modules/ngx-typed-js/fesm5/ngx-typed-js.js");
 /* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var _skills_skills_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./skills/skills.component */ "./src/app/skills/skills.component.ts");
+
 
 
 
@@ -163,7 +171,8 @@ var AppModule = /** @class */ (function () {
                 _background_background_component__WEBPACK_IMPORTED_MODULE_5__["BackgroundComponent"],
                 _profile_image_profile_image_component__WEBPACK_IMPORTED_MODULE_7__["ProfileImageComponent"],
                 _navgationbar_navgationbar_component__WEBPACK_IMPORTED_MODULE_10__["NavgationbarComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"]
+                _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
+                _skills_skills_component__WEBPACK_IMPORTED_MODULE_14__["SkillsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -195,7 +204,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#flexspan{\r\n    height: 10vh;\r\n}\r\n\r\n#profile_background{\r\n    margin-left: 10vw;\r\n    width:80vw;\r\n    height: 80vh;\r\n    background-color: rgba(10,20,20,0.5);\r\n    padding: 1%;\r\n}\r\n\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYmFja2dyb3VuZC9iYWNrZ3JvdW5kLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksaUJBQWlCO0lBQ2pCLFVBQVU7SUFDVixZQUFZO0lBQ1osb0NBQW9DO0lBQ3BDLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2JhY2tncm91bmQvYmFja2dyb3VuZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2ZsZXhzcGFue1xyXG4gICAgaGVpZ2h0OiAxMHZoO1xyXG59XHJcblxyXG4jcHJvZmlsZV9iYWNrZ3JvdW5ke1xyXG4gICAgbWFyZ2luLWxlZnQ6IDEwdnc7XHJcbiAgICB3aWR0aDo4MHZ3O1xyXG4gICAgaGVpZ2h0OiA4MHZoO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgxMCwyMCwyMCwwLjUpO1xyXG4gICAgcGFkZGluZzogMSU7XHJcbn1cclxuXHJcblxyXG4iXX0= */"
+module.exports = "#flexspan{\r\n    height: 10vh;\r\n}\r\n\r\n#profile_background{\r\n    margin-left: 10vw;\r\n    width:80vw;\r\n    height: 80vh;\r\n    background-color: rgba(10,20,20,0.7);\r\n    padding: 1%;\r\n}\r\n\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYmFja2dyb3VuZC9iYWNrZ3JvdW5kLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksaUJBQWlCO0lBQ2pCLFVBQVU7SUFDVixZQUFZO0lBQ1osb0NBQW9DO0lBQ3BDLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2JhY2tncm91bmQvYmFja2dyb3VuZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2ZsZXhzcGFue1xyXG4gICAgaGVpZ2h0OiAxMHZoO1xyXG59XHJcblxyXG4jcHJvZmlsZV9iYWNrZ3JvdW5ke1xyXG4gICAgbWFyZ2luLWxlZnQ6IDEwdnc7XHJcbiAgICB3aWR0aDo4MHZ3O1xyXG4gICAgaGVpZ2h0OiA4MHZoO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgxMCwyMCwyMCwwLjcpO1xyXG4gICAgcGFkZGluZzogMSU7XHJcbn1cclxuXHJcblxyXG4iXX0= */"
 
 /***/ }),
 
@@ -278,7 +287,7 @@ var BackgroundComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "div{\r\n    color:whitesmoke;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdntcclxuICAgIGNvbG9yOndoaXRlc21va2U7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -346,7 +355,7 @@ module.exports = "mat-toolbar{\r\n    margin-top:4%;\r\n    background:black;\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar [@fadeInUpOnEnter] = \"fadeInDownBigOnEnter\">\n  <span class=\"col-sm-6 \"></span>\n  <button mat-button class=\"col-sm-1\">Home</button>\n  <button mat-button class=\"col-sm-1\">Education</button>\n  <button mat-button class=\"col-sm-1\">Achivements</button>\n  <button mat-button class=\"col-sm-1\">Projects</button>\n  <button mat-button class=\"col-sm-1\">Skills</button>\n</mat-toolbar>\n\n"
+module.exports = "<mat-toolbar [@fadeInUpOnEnter] = \"fadeInDownBigOnEnter\" >\n  <span class=\"col-sm-7 \"></span>\n  <button mat-button class=\"col-sm-1\" routerLink=\"./\">Home</button>\n  <button mat-button class=\"col-sm-1\" >Education</button>\n  <button mat-button class=\"col-sm-1\">Achivements</button>\n  <button mat-button class=\"col-sm-1\">Projects</button>\n  <button mat-button class=\"col-sm-1\" routerLink=\"./skills\">Skills</button>\n</mat-toolbar>\n\n"
 
 /***/ }),
 
@@ -454,6 +463,71 @@ var ProfileImageComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], ProfileImageComponent);
     return ProfileImageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/skills/skills.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/skills/skills.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "img{\r\n    height: 100px;\r\n    margin: 20%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2tpbGxzL3NraWxscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL3NraWxscy9za2lsbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImltZ3tcclxuICAgIGhlaWdodDogMTAwcHg7XHJcbiAgICBtYXJnaW46IDIwJTtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/skills/skills.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/skills/skills.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n  <div class=\"col-md-3 col-sm-3\">\n    <img src=\"assets/Images/icons/flutter.png\" alt=\"flutter\">\n  </div>\n  <div class=\"col-md-3 col-sm-3\">\n      <img src=\"assets/Images/icons/java.png\" alt=\"java\">\n    </div>\n    <div class=\"col-md-3 col-sm-3\">\n        <img src=\"assets/Images/icons/spring_boot.png\" alt=\"spring boot\">\n      </div>\n    </div>\n    <div class=\"row\" [@bounceInOnEnter]=\"bouncestatus\">\n      <div class=\"col-md-3 col-sm-3\">\n          <img src=\"assets/Images/icons/angular.png\" alt=\"angular\">\n        </div>\n    <div class=\"col-md-3 col-sm-3 col-6\">\n      <img src=\"assets/Images/icons/nodejs.png\" alt=\"flutter\">\n    </div>\n    <!-- <div class=\"col-md-3 col-sm-3 col-6\">\n        <img src=\"assets/Images/icons/java.png\" alt=\"java\">\n      </div>\n      <div class=\"col-md-3 col-sm-3 col-6\">\n          <img src=\"assets/Images/icons/spring_boot.png\" alt=\"spring boot\">\n        </div>\n        <div class=\"col-md-3 col-sm-3 col-6\">\n            <img src=\"assets/Images/icons/angular.png\" alt=\"angular\">\n          </div> -->\n  </div>"
+
+/***/ }),
+
+/***/ "./src/app/skills/skills.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/skills/skills.component.ts ***!
+  \********************************************/
+/*! exports provided: SkillsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillsComponent", function() { return SkillsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular-animations */ "./node_modules/angular-animations/fesm5/angular-animations.js");
+
+
+
+var SkillsComponent = /** @class */ (function () {
+    function SkillsComponent() {
+        this.bouncestatus = true;
+    }
+    SkillsComponent.prototype.ngOnInit = function () {
+    };
+    SkillsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-skills',
+            template: __webpack_require__(/*! ./skills.component.html */ "./src/app/skills/skills.component.html"),
+            animations: [
+                Object(angular_animations__WEBPACK_IMPORTED_MODULE_2__["bounceInOnEnterAnimation"])({
+                    duration: 500,
+                    delay: 0
+                }),
+            ],
+            styles: [__webpack_require__(/*! ./skills.component.css */ "./src/app/skills/skills.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], SkillsComponent);
+    return SkillsComponent;
 }());
 
 
