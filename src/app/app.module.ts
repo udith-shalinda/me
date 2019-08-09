@@ -12,7 +12,7 @@ import { NavgationbarComponent } from './navgationbar/navgationbar.component';
 import { HomeComponent } from './home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { LayoutModule } from '@angular/cdk/layout';
-// import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 
 @NgModule({
@@ -30,8 +30,6 @@ import { LayoutModule } from '@angular/cdk/layout';
     BrowserAnimationsModule,
     NgxTypedJsModule,
     LayoutModule,
-    // FlexLayoutModule,
-  
     
 
     MatCardModule,

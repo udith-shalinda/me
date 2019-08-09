@@ -11,17 +11,7 @@
     margin-bottom: 0px;
     /* display: flex; */
 }
-
-#content{
-    display: inline-flex;
-
-}
-#profile_image{
-    flex-grow: 3;
-
-}
-#para{
-    flex-grow: 5;
-    
+app-profile-image{
+    /* width: 100%; */
 }
 

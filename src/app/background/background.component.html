@@ -3,13 +3,15 @@
 <div id="flexspan"></div>
 
 <div id="profile_background">
-    <div id="content">
-    <div id="profile_image" class="inlineContent">
-      <app-profile-image></app-profile-image> 
-    </div>
-    <div id="para" class="inlineContent">
-      <router-outlet></router-outlet> 
-    </div>
-  </div>
-  <app-navgationbar></app-navgationbar>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <app-profile-image></app-profile-image> 
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <router-outlet></router-outlet> 
+        </div>
+      </div>
+      <app-navgationbar></app-navgationbar>
+ 
 </div>
+
