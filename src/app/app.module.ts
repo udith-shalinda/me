@@ -7,9 +7,9 @@ import { BackgroundComponent } from './background/background.component';
 import { ParticlesModule } from 'angular-particle';
 import { ProfileImageComponent } from './profile-image/profile-image.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule,MatButtonModule, MatIconModule} from '@angular/material';
+import {MatCardModule,MatButtonModule, MatIconModule, MatToolbarModule} from '@angular/material';
 import { NavgationbarComponent } from './navgationbar/navgationbar.component';
-
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 @NgModule({
@@ -24,11 +24,13 @@ import { NavgationbarComponent } from './navgationbar/navgationbar.component';
     AppRoutingModule,
     ParticlesModule,
     BrowserAnimationsModule,
+    // FlexLayoutModule,
     
 
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule
     
   ],
   providers: [],

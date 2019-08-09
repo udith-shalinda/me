@@ -10,7 +10,7 @@ import { bounceAnimation, flashAnimation, bounceInOnEnterAnimation, collapseOnLe
   animations: [
     bounceInOnEnterAnimation({
       duration: 500,
-      delay:1000
+      delay:0
     }),
     bounceAnimation({}),
     bounceInUpAnimation()

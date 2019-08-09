@@ -1,0 +1,11 @@
+mat-toolbar{
+    margin-top:4%;
+    background:black;
+    color:white;
+}
+span{
+    margin-left: 50%;
+}
+button{
+    padding: 3%;
+}
