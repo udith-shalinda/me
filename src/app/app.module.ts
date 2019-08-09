@@ -12,6 +12,7 @@ import { NavgationbarComponent } from './navgationbar/navgationbar.component';
 import { HomeComponent } from './home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { LayoutModule } from '@angular/cdk/layout';
+import { SkillsComponent } from './skills/skills.component';
 
 
 
@@ -21,7 +22,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     BackgroundComponent,
     ProfileImageComponent,
     NavgationbarComponent,
-    HomeComponent
+    HomeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
