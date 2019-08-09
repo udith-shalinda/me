@@ -1,11 +1,15 @@
-<mat-card>
+<mat-card [@bounceInOnEnter]="bouncestatus">
     <div id="profileImage">
         <img src="assets\Images\profileImge.JPG" alt="profileImage">
       </div>
-      <mat-card-actions>
+      <mat-card-actions >
+        <!-- <span fxFlex></span> -->
           <mat-icon aria-hidden="false" aria-label="Example home icon" ><img src="assets/Images/icons/github-logo.svg" alt="github" class="social_media_icons"></mat-icon>
           <mat-icon aria-hidden="false" aria-label="Example home icon" ><img src="assets/Images/icons/facebook.svg" alt="github" class="social_media_icons"></mat-icon>
           <mat-icon aria-hidden="false" aria-label="Example home icon" ><img src="assets/Images/icons/linkedin-logo.svg" alt="github" class="social_media_icons"></mat-icon>
           <mat-icon aria-hidden="false" aria-label="Example home icon" ><img src="assets/Images/icons/hackerrank.png" alt="github" class="social_media_icons"></mat-icon>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" ><img src="assets/Images/icons/medium.png" alt="github" class="social_media_icons"></mat-icon>
+        <!-- <span fxFlex></span> -->
+
         </mat-card-actions>
   </mat-card>

@@ -8,12 +8,16 @@ import { ParticlesModule } from 'angular-particle';
 import { ProfileImageComponent } from './profile-image/profile-image.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule,MatButtonModule, MatIconModule} from '@angular/material';
+import { NavgationbarComponent } from './navgationbar/navgationbar.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BackgroundComponent,
-    ProfileImageComponent
+    ProfileImageComponent,
+    NavgationbarComponent
   ],
   imports: [
     BrowserModule,
