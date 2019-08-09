@@ -17,10 +17,11 @@
 
 }
 #profile_image{
-    flex-grow: 1;
+    flex-grow: 3;
 
 }
 #para{
-    /* float: left; */
     flex-grow: 5;
+    
 }
+
