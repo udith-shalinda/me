@@ -1,0 +1,11 @@
+<div id="content">
+  <ngx-typed-js [strings]="['amazing.', 'yellow.', 'delicious.']" [shuffle]="true" [typeSpeed]="40">
+      Bananas are <h1 class="typing"></h1>
+  </ngx-typed-js>  
+</div>
+
+<div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="start start">
+    <ng-container *ngFor="let _ of [1,2,3,4,5,6]">
+      <p fxFlex="0 1 calc(33.3% - 32px)">Flex</p>
+    </ng-container>
+  </div>

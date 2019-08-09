@@ -9,4 +9,18 @@
     background-color: rgba(10,20,20,0.5);
     padding: 1%;
     margin-bottom: 0px;
+    /* display: flex; */
+}
+
+#content{
+    display: inline-flex;
+
+}
+#profile_image{
+    flex-grow: 1;
+
+}
+#para{
+    /* float: left; */
+    flex-grow: 5;
 }

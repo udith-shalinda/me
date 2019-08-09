@@ -9,7 +9,10 @@ import { ProfileImageComponent } from './profile-image/profile-image.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule,MatButtonModule, MatIconModule, MatToolbarModule} from '@angular/material';
 import { NavgationbarComponent } from './navgationbar/navgationbar.component';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { HomeComponent } from './home/home.component';
+import {NgxTypedJsModule} from 'ngx-typed-js';
+import { LayoutModule } from '@angular/cdk/layout';
+// import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -17,14 +20,18 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     AppComponent,
     BackgroundComponent,
     ProfileImageComponent,
-    NavgationbarComponent
+    NavgationbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ParticlesModule,
     BrowserAnimationsModule,
+    NgxTypedJsModule,
+    LayoutModule,
     // FlexLayoutModule,
+  
     
 
     MatCardModule,
