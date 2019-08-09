@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BackgroundComponent } from './background/background.component';
 import { ParticlesModule } from 'angular-particle';
 import { ProfileImageComponent } from './profile-image/profile-image.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule,MatButtonModule, MatIconModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,14 @@ import { ProfileImageComponent } from './profile-image/profile-image.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ParticlesModule
+    ParticlesModule,
+    BrowserAnimationsModule,
+    
+
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

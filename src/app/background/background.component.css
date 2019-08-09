@@ -1,6 +1,14 @@
 #profile_background{
-    margin: 10%;
-    width:75%;
-    height: 250px;
+    /* margin-top: 10%; */
+    margin-left: 10vw;
+    width:80vw;
+    height: 80vh;
     background-color: rgba(10,20,20,0.5);
+    padding: 1%;
+    margin-bottom: 0px;
+}
+#flexspan{
+    height: 10vh;
+    /* width: 15%; */
+    /* background: red; */
 }
