@@ -17,9 +17,9 @@ mat-card{
 .social_media_icons:hover{
     cursor: pointer;
 }
-mat-icon{   
+/* mat-icon{   
     padding: 2%;
 }
 mat-card-actions{
     margin-left: 4%;
-}
+} */

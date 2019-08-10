@@ -88,6 +88,8 @@ THE SOFTWARE.
 
 @angular/material/icon
 
+@angular/material/progress-spinner
+
 @angular/material/toolbar
 
 @angular/platform-browser

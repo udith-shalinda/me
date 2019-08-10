@@ -7,13 +7,15 @@ import { BackgroundComponent } from './background/background.component';
 import { ParticlesModule } from 'angular-particle';
 import { ProfileImageComponent } from './profile-image/profile-image.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule,MatButtonModule, MatIconModule, MatToolbarModule} from '@angular/material';
+import {MatCardModule,MatButtonModule, MatIconModule, MatToolbarModule, MatProgressSpinnerModule} from '@angular/material';
 import { NavgationbarComponent } from './navgationbar/navgationbar.component';
 import { HomeComponent } from './home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { LayoutModule } from '@angular/cdk/layout';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -25,7 +27,9 @@ import { EducationComponent } from './education/education.component';
     NavgationbarComponent,
     HomeComponent,
     SkillsComponent,
-    EducationComponent
+    EducationComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,8 @@ import { EducationComponent } from './education/education.component';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatProgressSpinnerModule
     
   ],
   providers: [],
