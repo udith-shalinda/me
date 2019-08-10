@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { LayoutModule } from '@angular/cdk/layout';
 import { SkillsComponent } from './skills/skills.component';
+import { EducationComponent } from './education/education.component';
 
 
 
@@ -23,7 +24,8 @@ import { SkillsComponent } from './skills/skills.component';
     ProfileImageComponent,
     NavgationbarComponent,
     HomeComponent,
-    SkillsComponent
+    SkillsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
