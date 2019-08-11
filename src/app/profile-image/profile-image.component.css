@@ -16,6 +16,9 @@ mat-card{
 }
 .social_media_icons:hover{
     cursor: pointer;
+    fill: grayscale(100%);
+    /* color: blue;
+    background: blue; */
 }
 /* mat-icon{   
     padding: 2%;
