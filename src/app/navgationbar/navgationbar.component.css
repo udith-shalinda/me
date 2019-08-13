@@ -3,15 +3,13 @@ mat-toolbar{
     background:black;
     color:orange;
 }
-/* span{
-    margin-left: 50%;
-}
-button{
-    padding: 3%;
-} */
 
-@media only screen and (max-width: 600px) {
-    mat-toolbar {
+
+@media only screen and (max-width: 875px) {
+    span {
       display: none;
+    }
+    #contact{
+        display: none;
     }
   }
