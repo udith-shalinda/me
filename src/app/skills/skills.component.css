@@ -5,3 +5,11 @@ img{
 h1{
     color:orange;
 }
+.skillList{
+    height: 330px;
+    /* width: 90%; */
+}
+
+.row{
+    width: 100%;
+}

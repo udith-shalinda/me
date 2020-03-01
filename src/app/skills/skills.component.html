@@ -1,20 +1,13 @@
 <div>
   <h1>Skills</h1>
 </div>
-<div class="row">
-  <div class="col-md-4 col-sm-4 col-6">
-    <img src="assets/Images/icons/flutter.png" alt="flutter">
+
+<cdk-virtual-scroll-viewport itemSize=items.length class="skillList">
+  <div class="row">
+  <div *cdkVirtualFor="let item of items; templateCacheSize: 0" >
+      <div class="col-md-4 col-sm-4 col-6">
+        <img [src]="item.url" [alt]="item.alt">
+      </div>
+    </div>
   </div>
-  <div class="col-md-4 col-sm-4 col-6">
-      <img src="assets/Images/icons/java.png" alt="java">
-  </div>
-  <div class="col-md-4 col-sm-4 col-6">
-    <img src="assets/Images/icons/spring_boot.png" alt="spring boot">
-  </div>
-  <div class="col-md-4 col-sm-4 col-6">
-    <img src="assets/Images/icons/angular.png" alt="angular">
-  </div>
-  <div class="col-md-4 col-sm-4 col-6">
-    <img src="assets/Images/icons/nodejs.png" alt="flutter">
-  </div>
-</div>
+</cdk-virtual-scroll-viewport>

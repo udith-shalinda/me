@@ -1,3 +1,6 @@
+.projectsList{
+    height: 300px;
+}
 h1{
     color:orange;
 }
@@ -7,3 +10,4 @@ h5{
 li{
     color: orange;
 }
+
