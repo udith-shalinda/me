@@ -1,16 +1,13 @@
 <div>
   <h1>Projects</h1>
 </div>
-
-<ul>
-  <li><h5>Student management system</h5></li>
-  <ul><li>futter</li><li>Node js</li></ul>
-  <li><h5>Post Sharing Site</h5></li>
-  <ul><li>Angular</li><li>Node js</li></ul>
-  <li><h5>Clone of Stack overFlow</h5></li>
-  <ul><li>futter</li><li>Firebase</li></ul>
-  <li><h5>GPA Calculater</h5></li>
-  <ul><li>Html</li><li>JavaScript</li></ul>
-  <!-- <li><h5>GPA Calculater</h5></li>
-  <ul><li>Html</li><li>JavaScript</li></ul> -->
-</ul>
+<cdk-virtual-scroll-viewport itemSize=10 class="projectsList">
+  <div *cdkVirtualFor="let item of items; templateCacheSize: 0" >
+    <a href="https://github.com/udith-shalinda" target="_blank" rel="noopener noreferrer">
+      <ul>
+        <li><h5>{{item.name}}</h5></li>
+        <ul><li *ngFor="let dec of item.description">{{dec}}</li></ul>
+      </ul>
+    </a>
+  </div>
+</cdk-virtual-scroll-viewport>

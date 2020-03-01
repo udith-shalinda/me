@@ -12,6 +12,7 @@ import { NavgationbarComponent } from './navgationbar/navgationbar.component';
 import { HomeComponent } from './home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { LayoutModule } from '@angular/cdk/layout';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -38,6 +39,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     NgxTypedJsModule,
     LayoutModule,
+    ScrollingModule,
     
 
     MatCardModule,
