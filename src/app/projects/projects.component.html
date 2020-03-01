@@ -3,7 +3,7 @@
 </div>
 <cdk-virtual-scroll-viewport itemSize=10 class="projectsList">
   <div *cdkVirtualFor="let item of items; templateCacheSize: 0" >
-    <a href="https://github.com/udith-shalinda" target="_blank" rel="noopener noreferrer">
+    <a href={{item.url}} target="_blank" rel="noopener noreferrer">
       <ul>
         <li><h5>{{item.name}}</h5></li>
         <ul><li *ngFor="let dec of item.description">{{dec}}</li></ul>
